@@ -1,0 +1,14 @@
+#  Write a Python program to print all positive numbers in a range.
+
+list=[]
+n=int(input("Enter size of list "))
+for i in range(0,n):
+    p=int(input("Enter element of list "))
+    list.append(p)
+
+print("Positive numbers in",list,"are: ")
+  
+#traversing
+for i in list:   
+    if (i >= 0):
+      print('[',i,']')
