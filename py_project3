@@ -1,1 +1,22 @@
+# Write a Python Program for Fibonacci numbers.
 
+terms = int(input("How many terms to print : "))
+
+num1, num2 = 0, 1
+count = 0
+
+if terms <= 0:
+   print("Please enter a Positive Integer")
+
+elif terms == 1:
+   print("Fibonacci sequence upto",terms,":")
+   print(num1)
+
+else:
+   print("Fibonacci sequence upto",terms,"term is :")
+   while count < terms:
+       print(num1)
+       nth = num1 + num2
+       num1 = num2
+       num2 = numth
+       count += 1
