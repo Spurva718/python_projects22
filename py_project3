@@ -16,7 +16,7 @@ else:
    print("Fibonacci sequence upto",terms,"term is :")
    while count < terms:
        print(num1)
-       nth = num1 + num2
+       numth = num1 + num2
        num1 = num2
        num2 = numth
        count += 1
