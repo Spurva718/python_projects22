@@ -1,0 +1,42 @@
+#Write a Python program to accept a filename from the user and print the extension of that.
+
+filename = input("Input the Filename: ")
+
+f_extns = filename.split(".")
+
+if(f_extns[-1]=='py'):
+    print ("The extension of the file is : 'python'")
+    
+"""elif (f_extns[-1]=='c'):
+    print ("The extension of the file is : 'C'")  
+    
+elif (f_extns[-1]=='cpp'):
+    print ("The extension of the file is : 'C++'")  
+        
+elif (f_extns[-1]=='java'):
+    print ("The extension of the file is : 'Java'")  """
+    
+else:
+    print("Unknown Extension!! ")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
