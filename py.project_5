@@ -20,7 +20,7 @@ def most_frequent(string):
     print(i[0], i[1]) 
     
 # example input 
-string = str(input(" Please enter a string: "))
+string = input(" Please enter a string: ")
 
 # call the function
 most_frequent(string)
