@@ -1,16 +1,26 @@
 # Write Python code to create a function called most_frequent that takes a string and prints the letters in decreasing order of frequency. Use dictionaries.
 
-def most_frequent():
-mstr=str(input("Please enter a string: "))
-
-def most_frequent():
-    mstr=str(input("Please enter a string: "))
-    freq_t = {} 
-    for char in mstr: 
-        freq_t[char] = freq_t.get(char, 0) + 1
-    print ("Character frequency table for '{}' is :\n {}".format(mstr, str(freq_t)))
-
-def main():
-    most_frequent()
+def most_frequent(string): 
+   # create an empty dictionary 
+  freq = {}  
+ # loop through the string 
+  for i in string: 
+    # if letter is not in dictionary, add it 
+    if i not in freq: 
+      freq[i] = 1
+    # if letter is already in dictionary, increment its count 
+    else: 
+      freq[i] += 1
+  
+  # sort dictionary by value in descending order 
+  sorted_freq = sorted(freq.items(), key = lambda x: x[1], reverse = True) 
+  
+  # print the sorted dictionary 
+  for i in sorted_freq: 
+    print(i[0], i[1]) 
     
-main()
+# example input 
+string = str(input(" Please enter a string: "))
+
+# call the function
+most_frequent(string)
